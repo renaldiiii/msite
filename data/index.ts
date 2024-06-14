@@ -40,17 +40,17 @@ export const Tool =[
 export const Footer = [
     {
         id: 1,
-        img: "",
+        img: "/linkedin.png",
         alt: "LinkedIn",
     },
     {
         id: 2,
-        img: "",
-        alt: "GitHub"
+        img: "/git.png",
+        alt: "GitHub",
     },
     {
         id: 3,
-        img: "",
+        img: "/email.png",
         alt: "Email",
     }
 ]
