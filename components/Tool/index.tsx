@@ -10,6 +10,7 @@ export default function Tools() {
       <div className="flex justify-center space-x-16">
         {Tool.map((tool) => (
           <Image
+            key={tool.id}
             src={tool.img}
             alt={tool.name}
             width={100}

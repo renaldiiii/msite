@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { items } from "@/data";
+import { Navbar } from "@/data";
 import Tools from "./Tools";
 import FooterSection from "../Footer";
 import Logos from "../../public/logos.png";
@@ -14,7 +14,7 @@ export default function HomePage() {
             <Image src={Logos} width={35} height={1} alt="Renaldi" />
           </a>
           <div className="flex items-center gap-10 text-color-3 text-base font-bold mr-6">
-            {items.map((nav, i) => (
+            {Navbar.map((nav, i) => (
               <Link key={i} href="#">
                 {nav.name}
               </Link>
