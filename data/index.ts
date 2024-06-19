@@ -7,7 +7,7 @@ export const Navbar = [
 export const Tool =[
     { 
         id: 1,
-        name: "JavaSciprt",
+        name: "JavaScript",
         img: "/js.png",
         alt: "JavaScript",
     },
