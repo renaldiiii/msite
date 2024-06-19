@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Footer } from "@/data";
 
 export default function FooterSection() {
@@ -11,7 +12,7 @@ export default function FooterSection() {
         <div className="flex h-full items-center gap-5 p-2">
           {Footer.map((image, i) => (
             <Link href="#" key={i}>
-              <img src={image.img} alt={image.alt} width={25} height={1} />
+              <Image src={image.img} alt={image.alt} width={25} height={1} />
             </Link>
           ))}
         </div>

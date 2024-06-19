@@ -12,7 +12,7 @@ export default function Tools() {
                 key={i}
                 className="flex items-center rounded-md px-2 py-2 bg-white bg-opacity-10"
               >
-                <img src={tool.img} alt={tool.alt} width={30} height={1} />
+                <Image src={tool.img} alt={tool.alt} width={30} height={1} />
                 <span className="ml-2 text-color-4">{tool.name}</span>
               </div>
             ))}
