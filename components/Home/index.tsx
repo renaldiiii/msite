@@ -22,32 +22,32 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col justify-between px-4 mt-10 lg:flex-row">
-          <div className="flex flex-col">
-            <div className="flex flex-col text-color-4 gap-1">
-              <h2 className="text-xl font-semibold sm:text-justify mobile:text-center">
-                Front End Developer
-              </h2>
-              <h1
-                id="me"
-                className="text-3xl font-bold whitespace-nowrap tracking-tight text-color-3 sm:text-justify mobile:text-center"
-              >
-                Hi, I'm Renaldi
-              </h1>
-              <div className="mt-3 sm:mr-60 sm:ml-0 sm:text-justify mobile:mx-16 mobile:text-center">
-                <p>
-                  I'm Front End Developer, currently base in Cilegon Indonesia.
-                  This is my site, where i blog and share whatever side project
-                  I've been working on.
-                </p>
-                <p className="mt-4 whitespace-pre-line">
-                  Bringing designs and ideas to life, and always doing my best
-                  to make experience both accessible memorable to the end user
-                </p>
-              </div>
+          <div className="flex flex-col text-color-4 gap-1">
+            <h2 className="text-xl font-semibold sm:text-justify mobile:text-center">
+              Front End Developer
+            </h2>
+            <h1
+              id="me"
+              className="text-3xl font-bold whitespace-nowrap tracking-tight text-color-3 sm:text-justify mobile:text-center"
+            >
+              Hi, I'm Renaldi
+            </h1>
+            <div className="mt-3 sm:mr-50 sm:ml-0 sm:text-justify mobile:mx-5 mobile:text-center">
+              <p>
+                I'm Front End Developer, currently base in Cilegon Indonesia.
+                This is my site, where i blog and share whatever side project
+                I've been working on.
+              </p>
+              <p className="mt-4 whitespace-pre-line">
+                Bringing designs and ideas to life, and always doing my best to
+                make experience both{" "}
+                <span className="font-bold">accessible</span> and{" "}
+                <span className="font-bold">memorable</span> to the end user
+              </p>
             </div>
           </div>
-          <Tools />
         </div>
+        <Tools />
         <FooterSection />
       </section>
     </>
