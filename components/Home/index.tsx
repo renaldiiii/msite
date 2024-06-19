@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar } from "@/data";
-import { Tool } from "@/data";
+import { items } from "@/data";
 import Tools from "./Tools";
 import FooterSection from "../Footer";
 import Logos from "../../public/logos.png";
@@ -9,14 +8,16 @@ import Logos from "../../public/logos.png";
 export default function HomePage() {
   return (
     <>
-      <section className="h-screen lg:max-w-screen-lg sm:max-w-screen-sm">
+      <section className="h-screen max-w-7xl mx-auto sm:max-w-lg lg:max-w-screen-lg">
         <div className="flex h-24 items-center justify-between mx-auto">
           <a href="#" className="ml-2">
             <Image src={Logos} width={35} height={1} alt="Renaldi" />
           </a>
           <div className="flex items-center gap-10 text-color-3 text-base font-bold mr-6">
-            {Navbar.map((nav) => (
-              <Link href="#">{nav.name}</Link>
+            {items.map((nav, i) => (
+              <Link key={i} href="#">
+                {nav.name}
+              </Link>
             ))}
           </div>
         </div>

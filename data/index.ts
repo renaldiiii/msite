@@ -1,4 +1,4 @@
-export const Navbar = [
+export const items = [
     { name: "Home", link: "#home"},
     { name: "Project", link: "#project"},
     { name: "Contact", link: "#contact"},
