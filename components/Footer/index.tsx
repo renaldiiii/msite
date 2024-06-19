@@ -9,8 +9,8 @@ export default function FooterSection() {
           &copy;2024 Renaldi
         </span>
         <div className="flex h-full items-center gap-5 p-2">
-          {Footer.map((image) => (
-            <Link href="#" key={image.id}>
+          {Footer.map((image, i) => (
+            <Link href="#" key={i}>
               <img src={image.img} alt={image.alt} width={25} height={1} />
             </Link>
           ))}

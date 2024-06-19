@@ -7,9 +7,9 @@ export default function Tools() {
       <div className="flex flex-col max-w-xs">
         <div className="flex items-center rounded-md px-2 py-2">
           <div className="flex items-center gap-2 flex-wrap lg:justify-end mobile:justify-center mt-16">
-            {Tool.map((tool) => (
+            {Tool.map((tool, i) => (
               <div
-                key={tool.id}
+                key={i}
                 className="flex items-center rounded-md px-2 py-2 bg-white bg-opacity-10"
               >
                 <img src={tool.img} alt={tool.alt} width={30} height={1} />
